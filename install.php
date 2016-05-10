@@ -21,19 +21,19 @@ if($_POST) {
 	echo '<div class="error">';
 	if($no == 1) {
 	?>
-	Failed to connect to database server <br><br> please double check your informations !
+	Erreur lors de la connection avec le serveur <br><br>  Veuillez revérifier vos informations !
 	<br><br>
 	<?php
 	}
 	elseif($no == 2) {
 	?>
-	Error while creating tables !
+	Erreur lors de la création des tables !
 	<?php
 	}
 	else {
 	?>
-	Failed to create configuration file<br><br>
-	please create a file named &quot; config.php &quot; in main folder and put these codes in it<br><br>
+	Echec de création du fichier de configuration<br><br>
+	Veuillez créer un fichier nommeé &quot; config.php &quot; dans le répertoire principal et y mettre ce code<br><br>
 	<textarea cols="37" rows="10" readonly><?php echo $no; ?></textarea>
 	<br>
 	</div>
@@ -42,7 +42,7 @@ if($_POST) {
 	}
 	?>
 	<br><br>
-	<button onclick="history.back()" class="ask">Go back&nbsp;&nbsp;<i class="icon-reply"></i></button>
+	<button onclick="history.back()" class="ask">Revenir en arrière&nbsp;&nbsp;&nbsp;<i class="icon-reply"></i></button>
 	</div>
 	<?php
 	}
@@ -120,10 +120,10 @@ if($_POST) {
 	?>
 	<div class="f">
 	<div class="comment">
-	<div class="heads"><h4>Installation complete</h4></div>
-	<p>success , rezk2ll: Q/R has been installed successfully !</p>
+	<div class="heads"><h4>Installation Terminée</h4></div>
+	<p>Succès , GL 2: Q/R a été installé avec Succès !</p>
 	<br><br>
-	<center><a href="index.php"><button class="ask">Let's START <i class="icon-plane"></i> </button></a></center>
+	<center><a href="index.php"><button class="ask">On Commence ! <i class="icon-plane"></i> </button></a></center>
 	</div>
 	</div>
 	<?php
@@ -143,37 +143,37 @@ if($_POST) {
 else
 {
 ?>
-	<title>Installation : rezk2ll Q/R</title>
+	<title>Installation : GL 2 Q/R</title>
 <section id="login_form" class="main">
 				<center><form class="form-2" id="f" method="post">
 					<h1><span class="log-in">Installation</span></h1>
 					<p class="float">
 						<label for="login"><i class="icon-hdd"></i>host</label>
-						<input style="width:300px" type="text" name="host" placeholder="host">
+						<input style="width:300px" type="text" name="host" placeholder="localhost">
 					</p>
 					<p class="float">
-						<label for="login"><i class="icon-user"></i>username</label>
-						<input style="width:300px" type="text" name="user" placeholder="Username">
+						<label for="login"><i class="icon-user"></i>Nom d'utilisateur</label>
+						<input style="width:300px" type="text" name="user" placeholder="Nom d'Utilisateur">
 					</p>
 					<p class="float">
-						<label for="password"><i class="icon-lock"></i>Password</label>
-						<input style="width:300px" type="password" name="pass" placeholder="Password">
+						<label for="password"><i class="icon-lock"></i>Mot de Passe</label>
+						<input style="width:300px" type="password" name="pass" placeholder="Mot de Passe">
 					</p>
 					<p class="float">
-						<label for="login"><i class="icon-table"></i>database name</label>
-						<input style="width:300px" type="text" name="dbname" placeholder="Username">
+						<label for="login"><i class="icon-table"></i>Nom de la Base de Données</label>
+						<input style="width:300px" type="text" name="dbname" placeholder="MaBase">
 					</p>
 					<p class="float">
-						<label for="login"><i class="icon-user"></i>admin name</label>
-						<input style="width:300px" type="text" name="admin" id="username" placeholder="Username">
+						<label for="login"><i class="icon-user"></i>Nom de l'Admin</label>
+						<input style="width:300px" type="text" name="admin" id="username" placeholder="root">
 					</p>
 					<p class="float">
-						<label for="password"><i class="icon-lock"></i>admin password</label>
-						<input style="width:300px" type="password" name="adpass" placeholder="Password">
+						<label for="password"><i class="icon-lock"></i>Mot de Passe Admin</label>
+						<input style="width:300px" type="password" name="adpass" placeholder="Mot de Passe">
 					</p>
 					<p class="clearfix">
 						<br>
-						<input type="submit" class="ask" name="install" value="install">
+						<input type="submit" class="ask" name="install" value="Installer">
 					</p>
 				</form></center>
 </section>

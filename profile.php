@@ -18,8 +18,8 @@ if($_POST['uid']) {
 	
 	//throw HTTP error if group number is not valid
 	if(!is_numeric($uid)){
-		header('HTTP/1.1 403 Forbidden BITCH !');
-		die("mmmm bitch !");
+		header('HTTP/1.1 403 Forbidden !');
+		die("Erreur d'accès au serveur");
 	}
 
 
@@ -40,7 +40,7 @@ if($_POST['uid']) {
 		$adinfo = $connect->query("SELECT * FROM users WHERE user = '{$user}' ");
 		$addata = $adinfo->fetch(PDO::FETCH_OBJ);
 		if($addata->type == 1) {
-			$manage = '<span onclick="manage('.$uid.')" class="profile-menu">Edit</span>';
+			$manage = '<span onclick="manage('.$uid.')" class="profile-menu">Modifier</span>';
 		}
 		else $manage ="";
 		}
@@ -65,7 +65,7 @@ if($_POST['uid']) {
 				<br>
 				<div id="prof">
 					<div class="mainloading">
-					loading .... <img src="img/ajax-loader.gif">
+					Chargement .... <img src="img/ajax-loader.gif">
 					<br><br>
 					</div>
 				</div>
@@ -83,8 +83,8 @@ elseif($_POST['info']) {
 	
 	//throw HTTP error if group number is not valid
 	if(!is_numeric($id)){
-		header('HTTP/1.1 403 Forbidden BITCH !');
-		die("mmmm bitch !");
+		header('HTTP/1.1 403 Forbidden');
+		die("Erreur d'accès au serveur");
 	}
 
 
@@ -99,13 +99,13 @@ elseif($_POST['info']) {
 	echo '<div class="heads">
 	<table>
 			<tr>
-			<td><p class="name">joining date &nbsp;&nbsp;</p></td><td><p> '. $info->sign_date 	.'</p> </td>
+			<td><p class="name">Date d''inscription &nbsp;&nbsp;</p></td><td><p> '. $info->sign_date 	.'</p> </td>
 			</tr>
 			<tr>
-			<td><p class="name">Answers 	&nbsp;&nbsp;</p></td><td><p> '. $fetch1->cont_ans 	.'</p></td>
+			<td><p class="name">Réponses 	&nbsp;&nbsp;</p></td><td><p> '. $fetch1->cont_ans 	.'</p></td>
 			</tr>
 			<tr>
-			<td><p class="name">Question 	&nbsp;&nbsp;</p></td><td><p> '. $fetch2->cont_qst	.'</p></td>
+			<td><p class="name">Questions 	&nbsp;&nbsp;</p></td><td><p> '. $fetch2->cont_qst	.'</p></td>
 			</tr>
 	</table>
 		</div>';
@@ -117,8 +117,8 @@ elseif($_POST['quests']) {
 	
 	//throw HTTP error if group number is not valid
 	if(!is_numeric($id)){
-		header('HTTP/1.1 403 Forbidden BITCH !');
-		die("mmmm bitch !");
+		header('HTTP/1.1 403 Forbidden');
+		die("Erreur d'accès au serveur");
 	}
 	
 
@@ -218,7 +218,7 @@ elseif($_POST['quests']) {
 			</div>
 			<div class="name">Oops !</div>
 			</div>
-			<p>It seems that there is no questions to show yet ! <br> Feel free to ask one </p>
+			<p>Il parait que vous n'avez pas de questions ! <br> Tenez vous à l'aise de demander ?</p>
 	</div>
 	<script language="javascript">
 		$("#more").slideUp("slow");
@@ -233,8 +233,8 @@ elseif($_POST['admin']) {
 	
 	//throw HTTP error if group number is not valid
 	if(!is_numeric($id)){
-		header('HTTP/1.1 403 Forbidden BITCH !');
-		die("mmmm bitch !");
+		header('HTTP/1.1 403 Forbidden');
+		die("Erreur d'accès au serveur");
 	}
 	if(isset($_SESSION['log'])) {
 	$user = $_SESSION['log'];
@@ -268,9 +268,9 @@ elseif($_POST['admin']) {
 
 
 	}
-	else die("mmmm nice try bitch");
+	else die("Hahaha, un bon essai mon ami");
 	}
-	else die("mmmm nice try bitch");
+	else die("Hahaha, un bon essai mon ami");
 }
 elseif($_POST['deluser']) {
 
@@ -279,8 +279,8 @@ elseif($_POST['deluser']) {
 	
 	//throw HTTP error if group number is not valid
 	if(!is_numeric($id)){
-		header('HTTP/1.1 403 Forbidden BITCH !');
-		die("mmmm bitch !");
+		header('HTTP/1.1 403 Forbidden !');
+		die("Erreur d'accès au serveur");
 	}
 
 	if(isset($_SESSION['log'])) {

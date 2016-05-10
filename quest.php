@@ -12,7 +12,7 @@
 		session_start();
 		if(empty($_SESSION['log'])) {
 		?>
-		<button class="ask" id="loginlink2">you must login to ask your question&nbsp;&nbsp;<i class="icon-lock"></i></button>
+		<button class="ask" id="loginlink2">Vous devez vous connecter pour demander une question &nbsp;&nbsp;<i class="icon-lock"></i></button>
 		<br><br>
 		<br>
 		<?php
@@ -22,9 +22,9 @@
 		?>
 		<table>
 		<tr>
-		<td><textarea id="myquest" maxlength="200" style="resize: none" cols="55" rows="2" onfocus="resetask()" placeholder="you have a question in mind ??" autofocus></textarea></td>
+		<td><textarea id="myquest" maxlength="200" style="resize: none" cols="55" rows="2" onfocus="resetask()" placeholder="Une question dans l'esprit ?" autofocus></textarea></td>
 		<tr>
-		<td><button class="ask" onclick="ask()" style="width:550px;">Ask&nbsp;&nbsp;&nbsp;<i class="icon-volume-up"></i></button></td>
+		<td><button class="ask" onclick="ask()" style="width:550px;">Demander &nbsp;&nbsp;&nbsp;<i class="icon-volume-up"></i></button></td>
 		</tr>
 		</table>
 		<br><br>
@@ -34,7 +34,7 @@
 		<!-- questions will be loaded here -->
 		<div id="results">
 		<div class="mainloading">
-		loading .... <img src="img/ajax-loader.gif">
+		Chargement .... <img src="img/ajax-loader.gif">
 		<br><br>
 		</div>
 		</div>
@@ -44,7 +44,7 @@
 		</div>
 
 		<!-- load more button -->
-		<button id="more">show older questions&nbsp;&nbsp;<i class="icon-chevron-down"></i></button>
+		<button id="more">Afficher les anciennes questions &nbsp;&nbsp;<i class="icon-chevron-down"></i></button>
 		</div>
 </body>
 </html>

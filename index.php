@@ -9,8 +9,8 @@ if(!file_exists('config.php')) die("<script>location.replace('install.php')</scr
 if(empty($_SESSION['log'])) {
 	$account = "";
 	$access ='
-	<li id="ulog" width="60px"><a href="#" class="normalMenu" id="loginlink"><i class="icon-lock"></i>&nbsp;&nbsp;Login</a></li>
-	<li id="ulrg" width="60px"><a href="#" class="normalMenu" id="registerlink"><i class="icon-plus"></i>&nbsp;&nbsp;Sign up</a></li>';
+	<li id="ulog" width="60px"><a href="#" class="normalMenu" id="loginlink"><i class="icon-lock"></i>&nbsp;&nbsp;Connexion</a></li>
+	<li id="ulrg" width="60px"><a href="#" class="normalMenu" id="registerlink"><i class="icon-plus"></i>&nbsp;&nbsp;Inscription</a></li>';
 }
 
 # user is logged :)
@@ -30,12 +30,12 @@ else {
 		<span id="pp">'.$profilepic.'</span>
 		<span id="men"><i class="icon-reorder"></i></span>
 		<div id="navmenu">
-			<div class="lk"><center><i class="icon-cogs"></i>&nbsp;Settings</center></div>
+			<div class="lk"><center><i class="icon-cogs"></i>&nbsp;Paramètres</center></div>
 			<hr>
-			<div class="lk"><a href="#" id="chpass"><i class="icon-key"></i>&nbsp;Password</a></div>
+			<div class="lk"><a href="#" id="chpass"><i class="icon-key"></i>&nbsp;Mot de passe</a></div>
 			<div class="lk"><a href="#" id="chml"><i class="icon-envelope"></i>&nbsp;Email</a></div>
 			<div class="lk"><a href="#" id="chav"><i class="icon-user"></i>&nbsp;Avatar</a></div>
-			<div class="lk"><a href="#" id="logoutlink"><i class="icon-signout"></i>&nbsp;Log out</a></div>
+			<div class="lk"><a href="#" id="logoutlink"><i class="icon-signout"></i>&nbsp;Déconnexion</a></div>
 		</div>
 		';
 }
@@ -45,7 +45,7 @@ else {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>ReZK2LL : Q/R</title>
+<title>GL 2 : Q/R</title>
 
 
 <!-- yeah a lot of includes i know :'( -->
@@ -80,7 +80,7 @@ else {
 	
 	<td width="60%">
 		<ul id="navigationMenu">
-			<li width="60px"><a href="#" class="normalMenu" id="homelink"><i class="icon-home"></i>&nbsp;&nbsp;Home</a></li>
+			<li width="60px"><a href="#" class="normalMenu" id="homelink"><i class="icon-home"></i>&nbsp;&nbsp;Accueil</a></li>
 			<li width="60px"><a href="#" class="normalMenu" id="faqlink"><i class="icon-info"></i>&nbsp;&nbsp;FAQ</a></li>
 			<?php echo $access; ?>
 			<li width="60px"><a href="#" class="normalMenu" id="contactlink"><i class="icon-envelope"></i>&nbsp;&nbsp;Contact</a></li>
@@ -93,7 +93,7 @@ else {
 	<td width="20%">
 		<div align="right">
 		<div id="search">
-		  <input name="searchdata" onblur="resetsearch()" id="searchdata" type="text" onkeyup="searching(this.value)" placeholder="Search...">
+		  <input name="searchdata" onblur="resetsearch()" id="searchdata" type="text" onkeyup="searching(this.value)" placeholder="Chercher ...">
 		</div>
 		</div>
 	</td>

@@ -31,19 +31,19 @@ $stat['users'] = $result->nuser;
 	<br>
 	<hr>
 	<br>
-	<div class="st" title="We have <?php echo $stat['q_number']; ?> Questions">
+	<div class="st" title="On a atteint <?php echo $stat['q_number']; ?> Question">
 		<span class="sp"><?php echo $stat['q_number']; ?></span><i class="icon-question"></i>
 	</div>
 	<br>
-	<div class="st" title="We have <?php echo $stat['answers']; ?> Answers">
+	<div class="st" title="On a atteint <?php echo $stat['answers']; ?> Réponse">
 		<span class="sp"><?php echo $stat['answers']; ?></span> <i class="icon-lightbulb"></i>
 	</div>
 	<br>
-	<div class="st" title="We have <?php echo $stat['users']; ?> Users">
+	<div class="st" title="On a atteint <?php echo $stat['users']; ?> Utilisateur">
 		<span class="sp"><?php echo $stat['users']; ?></span> <i class="icon-group"></i> 
 	</div>
 	<br>
-	<div class="st" title="Our latest user">
+	<div class="st" title="Notre Dernier Utilisateur">
 	<i class="icon-user"></i> <span class="sp2"> <?php echo $stat['last_user']; ?></span> 
 	</div>
 	<br>
@@ -51,13 +51,13 @@ $stat['users'] = $result->nuser;
 	<br>
 	<br>
 	<br>
-	<h3>Find me</h3>
+	<h3>Trouvez Nous</h3>
 	<br>
 	<hr>
 	<br>
 	<br>
 	<br>
-<a target="_blank" title="contact us on facebook" href="https://facebook.com/k2ll33d"><img src="img/fb.png"></a> &nbsp;&nbsp;
-<a target="_blank" title="follow us on tweet" href="https://twitter.com/rezk2ll0"><img src="img/tw.png"></a> &nbsp;&nbsp;
-<a target="_blank" title="find us in google+"href="https://plus.google.com/u/0/103281836066747354593"><img src="img/go.png"></a>
+<a target="_blank" title="Contactez nous sur Facebook" href="https://facebook.com/k2ll33d"><img src="img/fb.png"></a> &nbsp;&nbsp;
+<a target="_blank" title="Abonnez vous sur Tweeter" href="https://twitter.com/rezk2ll0"><img src="img/tw.png"></a> &nbsp;&nbsp;
+<a target="_blank" title="Trouvez nous sur Google +"href="https://plus.google.com/u/0/103281836066747354593"><img src="img/go.png"></a>
 	</div>

@@ -50,10 +50,10 @@ if(isset($_POST['username'])) {
 	
 	# am trying to avoid some kiddies stupidities
 	
-	$fails = array("admin","hacked","pwned","deface","fuck","sex"); // some words i don't to see
+	$fails = array("admin","hacked","pwned","deface","fuck","sex","khaled"); // some words i don't to see
 	
 	foreach($fails as $fail) {
-	if(preg_match("/{$fail}/",$username)) die("invalid username");
+	if(preg_match("/{$fail}/",$username)) die("Nom d'utilisateur invalide");
 	}
 	
 	# i think everything is Ok , let's go to database
@@ -64,8 +64,8 @@ if(isset($_POST['username'])) {
 	$rq 	= $connect->query("select * from users");
 	
 	while($result = $rq->fetch(PDO::FETCH_OBJ)) {
-		if($result->user  == $username) die("user allready exist");
-		if($result->email == $email )	die("email allready user");
+		if($result->user  == $username) die("Ce nom d'utilisateur existe déjà");
+		if($result->email == $email )	die("Cet Email existe déjà");
 	}
 	
 	# ok , it's ok , let's put it on database
@@ -85,7 +85,7 @@ if(isset($_POST['username'])) {
 	
 	# shit ! , an error in the server 
 	
-	else die("unknown error , please try again");
+	else die("Erreur inconnue , veuillez réessayer");
 		
 }
 ?>

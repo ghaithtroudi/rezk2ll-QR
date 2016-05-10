@@ -2,7 +2,7 @@
 session_start();
 error_reporting(0);
 
-if(!isset($_SESSION['log'])) {die("mmmm bitch !");}
+if(!isset($_SESSION['log'])) {die("Erreur de connexion au Serveur");}
 
 
 if($_POST['chavatar']) {
@@ -35,15 +35,15 @@ else {
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<section id="upload_form" class="main">
 	<center><form style="width:400px;" class="form-2" method="post" ENCTYPE="multipart/form-data">
-	<h2>Change avatar</h2>
+	<h2>Changer avatar</h2>
 	<br>
 	<p class="float">
-		<label for="login"><i class="icon-user"></i>select an image from yout computer</label>
+		<label for="login"><i class="icon-user"></i>selectionner une image de votre ordinateur</label>
 		<br>
 		<input type="file" name="avatar" style="width:300px"><br><br>
 	</p>
 	<p class="clearfix">		
-		<input type="submit" name="chavatar" value="change avatar" class="ask">
+		<input type="submit" name="chavatar" value="changer avatar" class="ask">
 	</p>
 	</form>
 	</center>

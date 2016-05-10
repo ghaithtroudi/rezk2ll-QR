@@ -125,6 +125,7 @@ text-align:center;
 
 .form-2 input[type=button] ,.form-2 #register , .form-2 #login  , #more , .ask {
 
+    /*!  */
     height: 38px;
     box-shadow: inset 0 1px rgba(255,255,255,0.3);
     border-radius: 3px;

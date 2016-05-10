@@ -225,7 +225,7 @@ input,.info {
 	left:35%;
 	-moz-transition: all 0.5s ease-in-out;
 	position:fixed;
-	width:400px;
+	/*! width:400px; */
 	cursor:pointer;
 	border: 1px solid;
     margin: 10px 0px;
@@ -249,7 +249,7 @@ input,.info {
     color: #D8000C;
     background-color: #FFBABA;
 	background-image: url('../img/error.png');
-	border-left: 5px solid red;
+	/*! border-left: 5px solid red; */
 }
 
 #search input[type="text"] {

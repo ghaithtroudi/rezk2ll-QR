@@ -132,14 +132,14 @@ if(isset($_POST['searchdata'])) {
 			
 			# sorry i don't have it 
 			
-			die("<div class='error'>No matches found for &quot; $search &quot;</div>");
+			die("<div class='error'>Pas de résultats trouvés pour &quot; $search &quot;</div>");
 		}
 	}
 	
 	
 	# i made this for non ajax request , kiddies everywhere
 	
-	else die("<div class='error'>No matches found for &quot; $search &quot;</div>");
+	else die("<div class='error'>Pas de résultats trouvés pour &quot; $search &quot;</div>");
 	
 }
 ?>

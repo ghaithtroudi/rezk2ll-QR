@@ -125,7 +125,7 @@ if($_POST) {
 			</div>
 			<div class="name">Oops !</div>
 			</div>
-			<p>It seems that there is no questions to show yet ! <br> Feel free to ask one </p>
+			<p>Il parait qu'il n'y a pas de question pour le moment ! <br> Seriez vous le premier à y demander ?</p>
 	</div>
 	<script language="javascript">
 		$("#more").slideUp("slow");
